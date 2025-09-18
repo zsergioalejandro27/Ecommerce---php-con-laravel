@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+@extends('layouts.app')
+
+@section('css')
     <style>
         * {
             margin: 0;
@@ -144,8 +140,8 @@
         }
 
         /* Focus effects */
-        input:focus + br + label,
-        textarea:focus + br + label {
+        input:focus+br+label,
+        textarea:focus+br+label {
             color: #533483;
         }
 
@@ -155,6 +151,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -224,8 +221,9 @@
             background: linear-gradient(90deg, #6b46c1, #2563eb);
         }
     </style>
-</head>
-<body>
+@endsection
+
+@section('content')
     <h1>FORM TO CREATE A PRODUCT</h1>
 
     <form action="" method="post">
@@ -249,5 +247,4 @@
         <input type="text" name="brand">
 
     </form>
-</body>
-</html>
+@endsection

@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone 14 Pro Max - TechStore</title>
+@extends('layouts.app')
+
+@section('css')
     <style>
         * {
             margin: 0;
@@ -405,6 +402,7 @@
                 opacity: 0;
                 transform: translateX(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -454,22 +452,9 @@
             }
         }
     </style>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">TechStore</a>
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="Buscar productos...">
-            </div>
-            <div class="user-options">
-                <a href="#" class="user-btn">Iniciar Sesión</a>
-                <a href="#" class="user-btn">Carrito (0)</a>
-            </div>
-        </div>
-    </header>
+@endsection
 
+@section('content')
     <!-- Breadcrumb -->
     <div class="breadcrumb">
         <a href="index.html">Inicio</a> > <a href="categoria-smartphones.html">Smartphones</a> > iPhone 14 Pro Max
@@ -492,7 +477,7 @@
         <section class="product-info-section">
             <div class="product-category">Smartphone</div>
             <h1 class="product-title">iPhone 14 Pro Max</h1>
-            
+
             <div class="product-rating">
                 <div class="stars">★★★★★</div>
                 <span class="rating-text">(4.8/5 - 2,547 reseñas)</span>
@@ -501,7 +486,9 @@
             <div class="product-price">$1,199.99</div>
 
             <div class="product-description">
-                El iPhone 14 Pro Max representa la cúspide de la innovación móvil de Apple. Con su pantalla Super Retina XDR de 6.7 pulgadas, el chip A16 Bionic más avanzado y un sistema de cámaras profesional, este dispositivo redefine lo que puedes hacer con un smartphone.
+                El iPhone 14 Pro Max representa la cúspide de la innovación móvil de Apple. Con su pantalla Super Retina
+                XDR de 6.7 pulgadas, el chip A16 Bionic más avanzado y un sistema de cámaras profesional, este
+                dispositivo redefine lo que puedes hacer con un smartphone.
             </div>
 
             <div class="product-features">
@@ -571,5 +558,4 @@
             </div>
         </section>
     </main>
-</body>
-</html>
+@endsection

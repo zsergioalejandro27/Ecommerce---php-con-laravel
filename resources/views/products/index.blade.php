@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore - Tienda Online</title>
+@extends('layouts.app')
+
+@section('css')
     <style>
         * {
             margin: 0;
@@ -88,8 +85,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                        radial-gradient(circle at center, #533483 0%, #1e3a8a 100%);
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                radial-gradient(circle at center, #533483 0%, #1e3a8a 100%);
             padding: 80px 0;
             text-align: center;
         }
@@ -256,39 +253,41 @@
             animation: fadeInUp 0.6s ease-out forwards;
         }
 
-        .product-card:nth-child(1) { animation-delay: 0.1s; }
-        .product-card:nth-child(2) { animation-delay: 0.2s; }
-        .product-card:nth-child(3) { animation-delay: 0.3s; }
-        .product-card:nth-child(4) { animation-delay: 0.4s; }
-        .product-card:nth-child(5) { animation-delay: 0.5s; }
+        .product-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .product-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .product-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .product-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .product-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
     </style>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo">TechStore</div>
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="Buscar productos...">
-            </div>
-            <div class="user-options">
-                <a href="#" class="user-btn">Iniciar Sesión</a>
-                <a href="#" class="user-btn">Carrito (0)</a>
-            </div>
-        </div>
-    </header>
+@endsection
 
+@section('content')
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -296,11 +295,10 @@
             <p>Descubre los mejores productos tecnológicos al mejor precio</p>
         </div>
     </section>
-
     <!-- Products Section -->
     <section class="products-section">
         <h2 class="section-title">Productos Destacados</h2>
-        
+
         <div class="products-grid">
             <!-- Producto 1 -->
             <div class="product-card">
@@ -358,10 +356,4 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+@endsection
