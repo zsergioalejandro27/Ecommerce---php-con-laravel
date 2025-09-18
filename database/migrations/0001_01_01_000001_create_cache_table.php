@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+/*     public function up(): void
     {
         Schema::create('cache', function (Blueprint $table) {
             $table->string('key')->primary();
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('owner');
             $table->integer('expiration');
         });
-    }
+    } */
 
     /**
      * Reverse the migrations.
