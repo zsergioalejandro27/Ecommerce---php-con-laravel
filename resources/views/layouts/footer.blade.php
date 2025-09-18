@@ -1,1 +1,4 @@
-    <h1>FOOTER</h1>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
+    </footer>
